@@ -19,7 +19,7 @@ export default function About() {
       <div className="grid items-center gap-14 lg:grid-cols-[5fr_6fr] lg:gap-24">
         <div ref={ref} className="relative mx-auto w-full max-w-md overflow-hidden rounded-[2rem] border border-white/10 lg:mx-0">
           <motion.div style={{ y, scale: 1.12 }} className="relative aspect-[4/5]">
-            <Image src="/images/cover.JPG" alt={`Portrait placeholder of ${site.name}`} fill sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover" />
+            <Image src="/images/cover.jpg" alt={`Portrait placeholder of ${site.name}`} fill sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover" />
           </motion.div>
         </div>
 
