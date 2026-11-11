@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { background: #14151a; color: #ecedf0; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-ink font-sans text-bone antialiased; }
+  ::selection { background: #5a5cff; color: #fff; }
+  :focus-visible { outline: 2px solid #8f90ff; outline-offset: 3px; border-radius: 4px; }
+  h1, h2, h3 { @apply font-display; }
+}
+
+@layer components {
+  .glass { @apply border border-white/10 bg-white/[0.04] backdrop-blur-md; }
+}
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
